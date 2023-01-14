@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+/* This is Header part styles */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 240px 0 240px;
+}
+.header h3{
+    font-weight: 700;
+    font-size: 35px;
+}
+.nav-items{
+    display: flex;
+    gap: 40px;
+}
+.nav li{
+    list-style: none;
+    font-weight: 500px;
+    font-size: 18px;
+}
+
+/* -------- This is Main part Styles ----------- */
+
+.banner{
+    text-align: center;
+    background: rgba(255, 144, 14, 0.1);
+    left: 0;
+}
+.banner-details{
+    padding-top: 70px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.banner-description{
+    color: #727272;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.btn-primary{
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+}
+.banner img{
+    margin-top: 40px;
+    width: 1200px;
+    height: 600px;
+    margin-bottom: 25px;
+}
+
+/* This is body styles */
+
+/* Container 1 */
+.body-container-1{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+    margin-top: 80px;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.container-details{
+    font-size: 45px;
+}
+.container-details h3{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.container-details p{
+    font-weight: 400;
+    font-size: 13px;
+    color: #727272;
+    margin-bottom: 15px;
+    line-height: 150%;
+}
+.font-style-1{
+    font-weight: 400;
+    color: #727272;
+}
+.font-style-2{
+    color:#FF900E;
+}
+
+/*------------------ Responsive styles -----------------*/
+
+@media screen and (max-width: 688px) {
+    
+    /* header style */
+    .header{
+        padding: 30px 0 10px 20px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header h3{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .nav-items{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    /* banner styles */
+    .banner-title{
+        font-size: 54px;
+        margin-bottom: 15px;
+        line-height: 120%;
+    }
+    .banner-info{
+        padding: 0 10px;
+    }
+    .banner button{
+        margin-bottom: 30px;
+    }
+    .banner img{
+        padding: 0 15px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    /* body container style */
+    .body-container-1{
+        flex-direction: column-reverse;
+        padding: 0;
+        gap: 30px;
+    }
+    .container-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .images{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 20px;
+    }
+    .images img{
+        width: 100%;
+    }
+}
+
