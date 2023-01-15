@@ -31,9 +31,9 @@
 
 /* -------- This is Main part Styles ----------- */
 
-.banner{
+header, .banner{
     text-align: center;
-    background: rgba(255, 144, 14, 0.1);
+    background-color: rgba(255, 144, 14, 0.1);
     left: 0;
     top: 0;
 
@@ -266,9 +266,10 @@ footer{
 @media screen and (max-width: 688px) {
     
     /* header style */
+
     .header{
         padding: 30px 0 10px 20px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -285,6 +286,10 @@ footer{
     }
 
     /* banner styles */
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .banner-title{
         font-size: 54px;
         margin-bottom: 15px;
@@ -299,7 +304,7 @@ footer{
     .banner img{
         padding: 0 15px;
         margin-bottom: 20px;
-        width: 100%;
+        width: 90%;
     }
     
     /* body container style */
@@ -323,5 +328,110 @@ footer{
     .images img{
         width: 100%;
     }
+    .container-details{
+        margin-bottom: 0;
+    }
+
+    /* --------- Articles container -----------*/
+
+    .articles-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        margin: 0;
+        gap: 5px;
+    }
+    .left-top{
+        padding-top: 40px;
+        text-align: center;
+    }
+    .left-top p{
+        padding-left: 20px;
+    }
+    .boxes{
+        padding: 25px;
+    }
+    .right-side{
+        text-align: center;
+    }
+    .right-side img{
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    .btn{
+        top: 4280px;
+        padding: 50px ;
+        font-size: 40px;
+        margin: 0;
+        position: absolute;
+        left: 50px;
+        text-align: center;
+    }
+    .btn button{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .body-container-2{
+        margin: 0;
+        padding: 0 5px;
+    }
+    .facts-info{
+        padding-left: 10px;
+        padding-top: 20px;
+        margin-top: 100px;
+    }
+    .facts-info h2{
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .facts-info p{
+        margin-bottom: 0px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    .facts-items{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+
+
+    /* Sponsors*/
+
+    .sponsors{
+        padding: 0 15px;
+        margin-bottom: 60px;
+    }
+    .sponsors-img{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 15px;
+        width: 25%;
+        text-align: center;
+    }
+
+
+    /* Footer */
+
+    footer{
+        margin: 0 20px 40px 15px;
+    }
+    .footer{
+        font-size: 14px;
+        padding: 15px 5px;
+        margin: 0;
+        width: 100%;
+    }
+    .footer p{
+        padding: 0;
+    }
+
+
 }
 
